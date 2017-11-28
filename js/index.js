@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.hamburgerMenu').click(function() {
-      $('nav').slideToggle('200');
+      $('nav').toggleClass('mobile');
     });
 
 //Combo Slider

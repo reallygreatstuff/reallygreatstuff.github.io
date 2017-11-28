@@ -23,7 +23,7 @@ header {
 
 header h1 {
 	color: white;
-	padding: 0px 25px;
+	padding-left: 3%;
 	font-family: 'Rum Raisin', sans-serif;
 	font-weight: 400;
 	font-size: 30px;
@@ -40,15 +40,20 @@ a.topNav:hover {
     color: 	#fbec5d;
 }
 
+header .mobile {
+	display: none;
+}
+
 header nav {
 	color: white;
-	display: none;
 	padding-top: 15px;
+	clear: both;
 }
 
 header nav ul li {
 	display: block;
 	padding-bottom: 15px;
+	padding-left: 20px;
 }
 
 header nav ul li.allCaps {
@@ -257,6 +262,7 @@ aside.boxFour p {
   background-size: 100% auto;
   height: 100%;
   max-height: none;
+  position: relative;
 
 }
 
@@ -299,12 +305,14 @@ aside.boxFive {
   /* margin-top: -50px; */
   /* margin-left: 25px; */
   position: absolute;
-  top: 5%;
-  left: 9%;
+  top: 14%;
+  left: 12%;
+  height: 150px;
 }
 
 aside.boxFive button {
-	background:white;
+	background: #fbec5d;
+	transition: all .5s;
 }
 
 /***********Crunchy Combos***********/
@@ -527,20 +535,23 @@ footer nav ul li.allCaps {
 /**********************************/
 
 
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
 /***********Navigation ***********/
 header {
 	padding: 15px 0px 15px 0px;
-	max-height: 75px;
+
 }
 
 header h1 {
 	padding-left:75px;
 	font-size: 42px;
 	margin: auto;
+}
+
+header .mobile {
+	display: inline-block;
 }
 
 .hamburgerMenu {
@@ -550,10 +561,10 @@ header h1 {
 header nav {
 	color: white;
 	float: right;
-	margin-right: 50px;
+	margin-right: 1%;
 	margin-top: 0px;
-	
 	display: inline;
+	clear: none;
 }
 
 header nav ul li {
@@ -562,7 +573,7 @@ header nav ul li {
 }
 
 header nav ul li.allCaps {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 /***********Global Settings ***********/
@@ -625,13 +636,15 @@ aside.boxFive {
 }
 .cerealGenerator.boxFive h2 {
   font-size: 54px;
+  height: 150px;
 }
 .cerealGenerator.boxFive button {
   right: 20%;
 }
+
 .rotate {
-  top: 13%;
-  left: 9%;
+  top: 15%;
+  left: 11%;
 }
 
 /***********Crunchy Combos***********/
@@ -667,4 +680,19 @@ footer nav ul {
 footer nav ul li {
 	display: inline-block;
 	padding: 15px;
+}
+}
+
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+
+@media (min-width: 768px) and (max-width: 920px) {
+	
+header nav ul li.allCaps {
+	font-size: 1.7vw;
+}
+
 }
